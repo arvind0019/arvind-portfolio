@@ -124,10 +124,10 @@ export function HeroSection() {
           sm:top-auto
           sm:translate-y-0
           sm:bottom-0
-          w-[280px]
-          sm:w-[360px]
-          md:w-[440px]
-          lg:w-[520px]
+          w-[270px]
+          sm:w-[350px]
+          md:w-[430px]
+          lg:w-[500px]
         "
       >
         <Magnet
@@ -137,21 +137,28 @@ export function HeroSection() {
           inactiveTransition="transform 0.6s ease-in-out"
         >
           <div
-            className="w-full aspect-square rounded-full select-none pointer-events-none flex items-center justify-center"
+            className="w-full aspect-square rounded-full overflow-hidden select-none relative flex items-center justify-center group"
             style={{
               background:
-                "radial-gradient(circle at 35% 30%, rgba(215,226,234,0.18), rgba(12,12,12,0.9) 70%)",
-              border: "1px solid rgba(255,255,255,0.12)",
+                "radial-gradient(circle at 50% 30%, rgba(215,226,234,0.15), rgba(12,12,12,0.95) 75%)",
+              border: "1px solid rgba(255,255,255,0.18)",
               boxShadow:
-                "0 0 60px rgba(168,85,247,0.15), 0 0 100px rgba(236,72,153,0.1), inset 0 1px 1px rgba(255,255,255,0.1)",
+                "0 0 60px rgba(56,189,248,0.18), 0 0 100px rgba(168,85,247,0.14), inset 0 1px 2px rgba(255,255,255,0.25)",
             }}
           >
-            <span
-              className="hero-heading font-black uppercase leading-none"
-              style={{ fontSize: "clamp(3.5rem, 10vw, 7rem)" }}
-            >
-              AC
-            </span>
+            <img
+              src="/arvind-portrait.jpg"
+              alt="Arvind Chauhan - Full Stack Developer"
+              className="w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
+            />
+            {/* Subtle bottom gradient overlay for smooth visual blending */}
+            <div
+              className="absolute inset-0 pointer-events-none rounded-full"
+              style={{
+                background:
+                  "radial-gradient(circle at 50% 100%, rgba(12,12,12,0.5) 0%, transparent 60%)",
+              }}
+            />
           </div>
         </Magnet>
       </FadeIn>

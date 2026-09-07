@@ -83,6 +83,22 @@ export function AboutSection() {
           BCA · United Institute of Management (FUGS), Prayagraj &middot; 2023 – 2026
         </p>
 
+        {/* Core Pillars from profile */}
+        <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-5">
+          <div className="flex items-center gap-2.5 px-5 py-2.5 rounded-full border border-white/10 bg-white/[0.03] backdrop-blur-md transition-transform hover:-translate-y-0.5">
+            <span className="text-cyan-400 font-mono text-sm font-bold">&lt;/&gt;</span>
+            <span className="text-white/80 text-xs sm:text-sm font-medium uppercase tracking-wider">Clean Code</span>
+          </div>
+          <div className="flex items-center gap-2.5 px-5 py-2.5 rounded-full border border-white/10 bg-white/[0.03] backdrop-blur-md transition-transform hover:-translate-y-0.5">
+            <span className="text-amber-400 text-sm">💡</span>
+            <span className="text-white/80 text-xs sm:text-sm font-medium uppercase tracking-wider">Creative Solutions</span>
+          </div>
+          <div className="flex items-center gap-2.5 px-5 py-2.5 rounded-full border border-white/10 bg-white/[0.03] backdrop-blur-md transition-transform hover:-translate-y-0.5">
+            <span className="text-emerald-400 text-sm">📈</span>
+            <span className="text-white/80 text-xs sm:text-sm font-medium uppercase tracking-wider">Real Impact</span>
+          </div>
+        </div>
+
         <ContactButton />
       </div>
     </section>
