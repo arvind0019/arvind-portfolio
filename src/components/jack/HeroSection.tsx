@@ -46,8 +46,8 @@ export function HeroSection() {
       </FadeIn>
 
       {/* Title */}
-      <div className="overflow-hidden mt-6 sm:mt-4 md:-mt-5 px-2">
-        <FadeIn delay={0.15} y={40}>
+      <div className="overflow-hidden mt-6 sm:mt-4 md:-mt-5 px-4 sm:px-6 md:px-8 flex justify-center">
+        <FadeIn delay={0.15} y={40} className="w-full flex justify-center">
           <h1
             className="
               hero-heading
@@ -56,11 +56,11 @@ export function HeroSection() {
               tracking-tight
               leading-none
               whitespace-nowrap
-              w-full
-              text-[13vw]
-              sm:text-[14vw]
-              md:text-[15vw]
-              lg:text-[16.5vw]
+              text-center
+              text-[10.5vw]
+              sm:text-[11vw]
+              md:text-[11.5vw]
+              lg:text-[12vw]
             "
           >
             Hi, i&apos;m arvind
